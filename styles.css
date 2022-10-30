@@ -15,20 +15,22 @@ img {
 	image-rendering: pixelated;
 }
 
-li,a,button {
+li,button {
 	font-family: "Press Start 2P", monospace;
 	font-weight: 400;
 	font-size: 20px;
 	color: #ffffff;
 	text-decoration: none;
 }
+
 nav {
 	margin-left: -5%;
+	text-decoration: none;
 }
 
 .nav_links {
 	list-style: none;
-
+	text-decoration: none;
 }
 
 .nav_links li {
@@ -38,10 +40,14 @@ nav {
 
 .nav_links li a{
 	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	color: white;
+	background-color: none;
 }
 
 .nav_links li a:hover {
 	color: #222034;
+	margin-bottom: 100% ;
 }
 
 .container {
@@ -84,20 +90,26 @@ button:hover{
 }
 
 .article {
-	padding: 2% 1%;
+	padding: 0% 2%;
 	font-family: 'Press Start 2P';
-
 	color: #222034;
 	margin:0%;
 }
-
+.thumbnail {
+	position: absolute;
+	z-index: -1;
+}
 h1 {
-	padding: 1% 1%;
+	padding: 2% 0%;
 	margin-bottom:2%;
 	text-align: center;
-	background-color:#e3a084;
 }
 
 p {
 	padding: 0% 2%;
+}
+
+li, a {
+	color:#e3a084;
+	text-decoration: dotted;
 }
